@@ -17,6 +17,7 @@ public class Java_Oven_Shop {
     public static void main(String[] args) {
         // TODO code application logic here
         Fatayer ft=new Fatayer(FatayerType.CHEESE);
+        System.out.println(ft);
     }
     
 }

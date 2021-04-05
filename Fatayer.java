@@ -14,7 +14,6 @@ public class Fatayer implements Bakeable {
     Fatayer(FatayerType ft)
     {
         setFatayerType(ft);
-        n=getName();
     }
     FatayerType getFatayerType()
     {
@@ -42,11 +41,11 @@ public class Fatayer implements Bakeable {
     }
     public String toString()
     {
-        return "ABC";
+        return getName()+":  "+getType()+",  PRICE: "+getPrice()+",  Weight:  "+getWeight()+",  Calories:  "+getCalories();
     }
     public String getName()
 {
-    return getFatayer.getClass();
+    return this.getClass().getSimpleName().toString();
 }
 }
 
