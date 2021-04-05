@@ -13,16 +13,18 @@ import java.util.ArrayList;
  */
 public class Pizza //implements Bakeable 
 {
-//    Pizza(String name,BakeSize bz)
-//    {
-//        
-//    }
-//    Pizza(String name,BakeSize bz,ArrayList<Topping> arr)
-//    {
-//        
-//    }
-//    public String getName()
-//    {
+    private String Name;
+    Pizza(String name,BakeSize bz)
+    {
+        this.Name=name;
+        
+   }
+    Pizza(String name,BakeSize bz,ArrayList<Topping> arr)
+    {
+        
+    }
+    public String getName()
+    {
 //        
 //    }
 //    void setName(String name)
