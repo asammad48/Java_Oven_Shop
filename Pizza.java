@@ -11,49 +11,50 @@ import java.util.ArrayList;
  *
  * @author Abdul Sammad
  */
-public class Pizza implements Bakeable {
-    Pizza(String name,BakeSize bz)
-    {
-        
-    }
-    Pizza(String name,BakeSize bz,ArrayList<Topping> arr)
-    {
-        
-    }
-    public String getName()
-    {
-        
-    }
-    void setName(String name)
-    {
-        
-    }
-    void setTopping(ArrayList<Topping> arr)
-    {
-        
-    }
-    ArrayList<Topping> getTopping()
-    {
-        
-    }
-    void addTopping(Topping topping)
-    {
-        
-    }
-    public String getType()
-    {
-        
-    }
-    int getToppingCount()
-    {
-        
-    }
-    public double getPrice()
-    {
-        
-    }
-    public String toString()
-    {
-        
-    }
+public class Pizza //implements Bakeable 
+{
+//    Pizza(String name,BakeSize bz)
+//    {
+//        
+//    }
+//    Pizza(String name,BakeSize bz,ArrayList<Topping> arr)
+//    {
+//        
+//    }
+//    public String getName()
+//    {
+//        
+//    }
+//    void setName(String name)
+//    {
+//        
+//    }
+//    void setTopping(ArrayList<Topping> arr)
+//    {
+//        
+//    }
+//    ArrayList<Topping> getTopping()
+//    {
+//        
+//    }
+//    void addTopping(Topping topping)
+//    {
+//        
+//    }
+//    public String getType()
+//    {
+//        
+//    }
+//    int getToppingCount()
+//    {
+//        
+//    }
+//    public double getPrice()
+//    {
+//        
+//    }
+//    public String toString()
+//    {
+//        
+//    }
 }

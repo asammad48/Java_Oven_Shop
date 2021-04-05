@@ -9,6 +9,21 @@ package java_oven_shop;
  *
  * @author Abdul Sammad
  */
-public enum ThinCrust {
-    
+public class ThinCrust extends Pizza {
+//    ThinCrust(String name,BakeSize bz)
+//    {
+//        
+//    }
+//    public double getWeight()
+//    {
+//        
+//    }
+//    public double getChoice()
+//    {
+//        
+//    }
+//    public String toString()
+//    {
+//        
+//    }
 }

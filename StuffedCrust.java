@@ -9,6 +9,26 @@ package java_oven_shop;
  *
  * @author Abdul Sammad
  */
-public enum StuffedCrust {
-    
+public class StuffedCrust //extends ThickCrust
+{
+////    StuffedCrust(String Name,BakeSize bz)
+//    {
+//        super(Name,bz);
+//    }
+//    public double getWeight()
+//    {
+//        
+//    }
+//    public double getCalories()
+//    {
+//        
+//    }
+//    public double getPrice()
+//    {
+//        
+//    }
+//    public String toString()
+//    {
+//        
+//    }
 }

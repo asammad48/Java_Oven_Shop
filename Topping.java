@@ -10,5 +10,9 @@ package java_oven_shop;
  * @author Abdul Sammad
  */
 public enum Topping {
-    
+    CHEESE,
+    PEPPORONI,
+    OLIVES,ONION,BEEF,
+    SHRIMP,
+    CHICKEN;
 }

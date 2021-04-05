@@ -9,6 +9,22 @@ package java_oven_shop;
  *
  * @author Abdul Sammad
  */
-public enum ThickCrust {
-    
+public class ThickCrust extends Pizza{
+// ThickCrust(String name, BakeSize bz)
+// {
+//     
+// }
+// public double getWeight()
+// {
+//     
+// }
+// public double getCalories()
+// {
+//     
+// }
+// public String toString()
+// {
+//     
+// }
+// 
 }
