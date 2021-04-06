@@ -17,6 +17,7 @@ public class BakesOrder
      setOrderID(orderID);
      setCustomer(cus);
      setBakes(arrbo);
+     setOrderDate(orderDate);
  }
  BakesOrder(int orderID,Customer cus,ArrayList<Bakeable> arr)
  {
