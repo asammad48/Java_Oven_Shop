@@ -1,16 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package java_oven_shop;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author Abdul Sammad
- */
+
 public abstract class Pizza implements Bakeable 
 {
     private String Name;
@@ -64,7 +57,12 @@ public abstract class Pizza implements Bakeable
     }
     public double getPrice()
     {
-        return bz.BP;
+        double price=0;
+        arr=getTopping();
+        for (int counter = 0; counter < arr.size(); counter++) { 		      
+          price=price+bz.Ext_Top;
+      }
+        return price+bz.BP;
     }
     public String toString()
     {

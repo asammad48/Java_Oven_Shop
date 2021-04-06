@@ -1,37 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package java_oven_shop;
 
-/**
- *
- * @author Abdul Sammad
- */
+
 public class Java_Oven_Shop {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
-       // Fatayer ft=new Fatayer(FatayerType.CHEESE);
-       // System.out.println(ft);
-//        ThinCrust tc1=new  ThinCrust("Four Season",BakeSize.MEDIUM);
-//        tc1.addTopping(Topping.ONION);
-//        
-//        tc1.addTopping(Topping.BEEF);
-//        System.out.println(tc1);
         
         
         
         
-          StuffedCrust tc2=new  StuffedCrust("Four Season",BakeSize.LARGE);
-        tc2.addTopping(Topping.CHICKEN);
-        
-        tc2.addTopping(Topping.PEPPORONI);
-        System.out.println(tc2);
+        Fatayer f = new Fatayer(FatayerType.CHEESE); 
+        StuffedCrust tc3 = new StuffedCrust("Supreme Cheese", BakeSize.LARGE); 
+        tc3.addTopping(Topping.ONION); tc3.addTopping(Topping.CHEESE); 
+        ThinCrust tc4=new ThinCrust("Magnum", BakeSize.MEDIUM);
+        tc4.addTopping(Topping.OLIVES);
+        Address a1 = new Address (45, 70, "Wadi Albanat"); 
+        Customer cust1= new Customer(100, "Ali Hassan Abdulla", "66779988"); 
+        cust1.setAddress(a1); 
+        BakesOrder bo1 = new BakesOrder(123, cust1);  
+        bo1.addBakeable(tc3); bo1.addBakeable(f); bo1.addBakeable(tc4);
+        System.out.println(bo1); 
     }
     
 }

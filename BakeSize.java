@@ -1,14 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package java_oven_shop;
 
-/**
- *
- * @author Abdul Sammad
- */
+
 public enum BakeSize {
    SMALL(10,2.5,350,500,200,300,50,80),
    MEDIUM(15,3.5,550,700,300,500,75,120),
