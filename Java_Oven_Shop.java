@@ -16,8 +16,22 @@ public class Java_Oven_Shop {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Fatayer ft=new Fatayer(FatayerType.CHEESE);
-        System.out.println(ft);
+       // Fatayer ft=new Fatayer(FatayerType.CHEESE);
+       // System.out.println(ft);
+//        ThinCrust tc1=new  ThinCrust("Four Season",BakeSize.MEDIUM);
+//        tc1.addTopping(Topping.ONION);
+//        
+//        tc1.addTopping(Topping.BEEF);
+//        System.out.println(tc1);
+        
+        
+        
+        
+          ThickCrust tc2=new  ThickCrust("Four Season",BakeSize.LARGE);
+        tc2.addTopping(Topping.CHICKEN);
+        
+        tc2.addTopping(Topping.PEPPORONI);
+        System.out.println(tc2);
     }
     
 }

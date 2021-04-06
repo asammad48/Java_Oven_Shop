@@ -5,26 +5,45 @@
  */
 package java_oven_shop;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Abdul Sammad
  */
-public class ThickCrust extends Pizza{
-// ThickCrust(String name, BakeSize bz)
-// {
-//     
-// }
-// public double getWeight()
-// {
-//     
-// }
-// public double getCalories()
-// {
-//     
-// }
-// public String toString()
-// {
-//     
-// }
-// 
+public class ThickCrust extends Pizza
+{
+
+    ThickCrust(String name,BakeSize bz)
+    {
+        
+        super(name,bz);
+    }
+    public double getWeight()
+    {
+      return super.getSize().Thick_Crust_Weight; 
+    }
+    public double getCalories()
+    {
+        return super.getSize().Thick_Crust_Calories;
+    }
+    @Override
+    public String toString()
+    {
+        double weight=0;
+        double calories=0;
+        double price=0;
+        System.out.println(super.toString());
+        ArrayList<Topping> arr=super.getTopping();
+        System.out.print("TOPPING ("+super.getToppingCount()+") : ");
+        for (int counter = 0; counter < arr.size(); counter++) { 		      
+          System.out.print(arr.get(counter)+"  "); 
+          weight=super.getSize().Extra_Topping_Weight+weight;
+          calories=super.getSize().Extra_Topping_Calories+calories;
+          price=super.getSize().Ext_Top+price;
+      }
+        System.out.println("");
+        return this.getClass().getSimpleName()+" - Weight (GRAMS): "+(weight+getWeight())+", Calories : "+(calories+getCalories())+", "+"PRICE :  "+(price+super.getPrice());
+        
+    }
 }

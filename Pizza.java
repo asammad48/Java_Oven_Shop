@@ -11,13 +11,18 @@ import java.util.ArrayList;
  *
  * @author Abdul Sammad
  */
-public class Pizza //implements Bakeable 
+public abstract class Pizza implements Bakeable 
 {
     private String Name;
+    private ArrayList<Topping> arr;
+    private BakeSize bz;
+    private Topping tp;
+    private int count=0;
     Pizza(String name,BakeSize bz)
     {
-        this.Name=name;
-        
+        setName(name);
+        setTopping(arr);
+        this.bz=bz;
    }
     Pizza(String name,BakeSize bz,ArrayList<Topping> arr)
     {
@@ -25,38 +30,44 @@ public class Pizza //implements Bakeable
     }
     public String getName()
     {
-//        
-//    }
-//    void setName(String name)
-//    {
-//        
-//    }
-//    void setTopping(ArrayList<Topping> arr)
-//    {
-//        
-//    }
-//    ArrayList<Topping> getTopping()
-//    {
-//        
-//    }
-//    void addTopping(Topping topping)
-//    {
-//        
-//    }
-//    public String getType()
-//    {
-//        
-//    }
-//    int getToppingCount()
-//    {
-//        
-//    }
-//    public double getPrice()
-//    {
-//        
-//    }
-//    public String toString()
-//    {
-//        
-//    }
+        return Name;
+    }
+   void setName(String name)
+    {
+     this.Name=name;   
+    }
+   BakeSize getSize()
+   {
+       return bz;
+   }
+    void setTopping(ArrayList<Topping> arr)
+    {
+         this.arr=arr;
+         this.arr=new ArrayList<Topping>();
+    }
+    ArrayList<Topping> getTopping()
+    {
+       return this.arr;        
+    }
+    void addTopping(Topping topping)
+    {
+        this.arr.add(topping);
+        count++;
+    }
+    public String getType()
+    {
+        return this.getClass().getSimpleName();
+    }
+    int getToppingCount()
+    {
+        return count;
+    }
+    public double getPrice()
+    {
+        return bz.BP;
+    }
+    public String toString()
+    {
+        return getType()+": "+getName()+",  size: "+getSize();
+    }
 }
