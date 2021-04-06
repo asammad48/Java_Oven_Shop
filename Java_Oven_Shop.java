@@ -27,7 +27,7 @@ public class Java_Oven_Shop {
         
         
         
-          ThickCrust tc2=new  ThickCrust("Four Season",BakeSize.LARGE);
+          StuffedCrust tc2=new  StuffedCrust("Four Season",BakeSize.LARGE);
         tc2.addTopping(Topping.CHICKEN);
         
         tc2.addTopping(Topping.PEPPORONI);
